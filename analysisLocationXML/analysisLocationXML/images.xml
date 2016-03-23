@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<huanghao>
+<images>
+      <id>0</id>
+      <name>hottub1</name>
+      <image>hottub-1.png</image>
+      <artist>bluehost</artist>
+    </images>
+    <images>
+      <id>1</id>
+      <name>hottub2</name>
+      <image>hottub-2.png</image>
+      <artist>bluehost</artist>
+    </images>
+    <images>
+      <id>2</id>
+      <name>hottub3</name>
+      <image>hottub-3.png</image>
+      <artist>bluehost</artist>
+    </images>
+   </huanghao>
