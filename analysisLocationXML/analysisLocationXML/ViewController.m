@@ -17,17 +17,22 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     LCAnalysisLocationXML *analysisXML = [[LCAnalysisLocationXML alloc]init];
-    NSString *path1 = [[NSBundle mainBundle]pathForResource:@"images" ofType:@"xml"];
-    [analysisXML startAnalyXMLWithFilePath:path1 andElementName:@"images" andElements:@[@"name",@"image",@"artist"] andResult:^(NSArray *dictArray) {
-        NSLog(@"XML%@",dictArray);
-    }];
-//
-    NSString *paht2 = [[NSBundle mainBundle]pathForResource:@"timezones" ofType:@"xml"];
-    [analysisXML startAnalyXMLWithFilePath:paht2 andElementName:@"timezone" andResult:^(NSArray *dictArray) {
-        NSLog(@"XML%@",dictArray);
-    }];
-    NSString *paht3 = [[NSBundle mainBundle]pathForResource:@"country" ofType:@"xml"];
-    [analysisXML startAnalyXMLWithFilePath:paht3 andElementName:@"item" andResult:^(NSArray *dictArray) {
+//    NSString *path1 = [[NSBundle mainBundle]pathForResource:@"images" ofType:@"xml"];
+//    [analysisXML startAnalyXMLWithFilePath:path1 andElementName:@"images" andElements:@[@"name",@"image",@"artist"] andResult:^(NSArray *dictArray) {
+//        NSLog(@"XML%@",dictArray);
+//    }];
+////
+//    NSString *paht2 = [[NSBundle mainBundle]pathForResource:@"timezones" ofType:@"xml"];
+//    [analysisXML startAnalyXMLWithFilePath:paht2 andElementName:@"timezone" andResult:^(NSArray *dictArray) {
+//        NSLog(@"XML%@",dictArray);
+//    }];
+//    NSString *paht3 = [[NSBundle mainBundle]pathForResource:@"country" ofType:@"xml"];
+//    [analysisXML startAnalyXMLWithFilePath:paht3 andElementName:@"item" andResult:^(NSArray *dictArray) {
+//        NSLog(@"XML%@",dictArray);
+//    }];
+    
+    NSString *paht4 = [[NSBundle mainBundle]pathForResource:@"earth_address" ofType:@"xml"];
+    [analysisXML startAnalyXMLTypeThreeWithFilePath:paht4 andElementName:@"city" andResult:^(NSArray *dictArray) {
         NSLog(@"XML%@",dictArray);
     }];
 }

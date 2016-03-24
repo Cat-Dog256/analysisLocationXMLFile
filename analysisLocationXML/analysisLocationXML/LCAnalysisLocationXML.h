@@ -26,4 +26,8 @@
     <timezone id="Australia/Darwin">Darwin</timezone>
     **/
 - (void)startAnalyXMLWithFilePath:(NSString *)filePath andElementName:(NSString *)elementName andResult:(void(^)(NSArray *dictArray))resultBlcok;
+/**格式三 
+ <city id="8636" name="北区" latitude="null"longitude="null"></city>**/
+- (void)startAnalyXMLTypeThreeWithFilePath:(NSString *)filePath andElementName:(NSString *)elementName andResult:(void(^)(NSArray *dictArray))resultBlcok;
+
 @end

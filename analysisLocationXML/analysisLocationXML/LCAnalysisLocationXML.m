@@ -17,7 +17,7 @@
 
 @property (nonatomic , strong) NSMutableArray *tagDictArray;
 @property (nonatomic , copy) void(^analysisEndBlock)(NSArray *dictArray);
-
+@property (nonatomic , strong) NSNumber *xmlType;
 @end
 
 @implementation LCAnalysisLocationXML
@@ -48,17 +48,36 @@
     }];
     [self.parserXml parse];
 }
+- (void)startAnalyXMLTypeThreeWithFilePath:(NSString *)filePath andElementName:(NSString *)elementName andResult:(void (^)(NSArray *))resultBlcok{
+    self.xmlData = [[NSData alloc]initWithContentsOfFile:filePath];
+    self.parserXml = [[NSXMLParser alloc]initWithData:self.xmlData];
+    self.tagElementName = elementName;
+    self.parserXml.delegate = self;
+    self.xmlType = @3;
+    [self setAnalysisEndBlock:^(NSArray *dictArray) {
+        resultBlcok(dictArray);
+    }];
+    [self.parserXml parse];
+}
 #pragma mark**解析标签开始**
 - (void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary<NSString *,NSString *> *)attributeDict{
     self.tempElementName = elementName;
-    if ([elementName isEqualToString:
-         self.tagElementName]) {
-        NSString *identifier = [attributeDict objectForKey:@"id"];
-        NSMutableDictionary *oneDic = [NSMutableDictionary dictionary];
-        if (identifier.length != 0) {
-            oneDic[@"id"] = identifier;
+    if ([self.xmlType isEqualToNumber:@3]) {
+        if ([elementName isEqualToString:
+             self.tagElementName]) {
+        [self.tagDictArray addObject:attributeDict];
         }
-        [self.tagDictArray addObject:oneDic];
+    }else{
+        if ([elementName isEqualToString:
+             self.tagElementName]) {
+            NSString *identifier = [attributeDict objectForKey:@"id"];
+            NSMutableDictionary *oneDic = [NSMutableDictionary dictionary];
+            if (identifier.length != 0) {
+                oneDic[@"id"] = identifier;
+            }
+            [self.tagDictArray addObject:oneDic];
+        }
+
     }
 }
 #pragma mark**获取到标签对应的数据**
