@@ -19,6 +19,7 @@
 		004BAE491CA2671E00EF2641 /* country.xml in Resources */ = {isa = PBXBuildFile; fileRef = 004BAE481CA2671E00EF2641 /* country.xml */; };
 		004BAE4C1CA2675100EF2641 /* LCAnalysisLocationXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 004BAE4B1CA2675100EF2641 /* LCAnalysisLocationXML.m */; };
 		004BAE4E1CA28BAE00EF2641 /* images.xml in Resources */ = {isa = PBXBuildFile; fileRef = 004BAE4D1CA28BAE00EF2641 /* images.xml */; };
+		D29836491CA3A63D0004AFD9 /* earth_address.xml in Resources */ = {isa = PBXBuildFile; fileRef = D29836481CA3A63D0004AFD9 /* earth_address.xml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		004BAE4A1CA2675100EF2641 /* LCAnalysisLocationXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCAnalysisLocationXML.h; sourceTree = "<group>"; };
 		004BAE4B1CA2675100EF2641 /* LCAnalysisLocationXML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCAnalysisLocationXML.m; sourceTree = "<group>"; };
 		004BAE4D1CA28BAE00EF2641 /* images.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = images.xml; sourceTree = "<group>"; };
+		D29836481CA3A63D0004AFD9 /* earth_address.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = earth_address.xml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				004BAE141CA2663F00EF2641 /* main.m */,
+				D29836481CA3A63D0004AFD9 /* earth_address.xml */,
 				004BAE461CA2671500EF2641 /* timezones.xml */,
 				004BAE4D1CA28BAE00EF2641 /* images.xml */,
 				004BAE481CA2671E00EF2641 /* country.xml */,
@@ -263,6 +266,7 @@
 				004BAE231CA2663F00EF2641 /* LaunchScreen.storyboard in Resources */,
 				004BAE4E1CA28BAE00EF2641 /* images.xml in Resources */,
 				004BAE201CA2663F00EF2641 /* Assets.xcassets in Resources */,
+				D29836491CA3A63D0004AFD9 /* earth_address.xml in Resources */,
 				004BAE491CA2671E00EF2641 /* country.xml in Resources */,
 				004BAE471CA2671500EF2641 /* timezones.xml in Resources */,
 				004BAE1E1CA2663F00EF2641 /* Main.storyboard in Resources */,
@@ -519,6 +523,7 @@
 				004BAE3F1CA2663F00EF2641 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		004BAE401CA2663F00EF2641 /* Build configuration list for PBXNativeTarget "analysisLocationXMLTests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +532,7 @@
 				004BAE421CA2663F00EF2641 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		004BAE431CA2663F00EF2641 /* Build configuration list for PBXNativeTarget "analysisLocationXMLUITests" */ = {
 			isa = XCConfigurationList;
@@ -535,6 +541,7 @@
 				004BAE451CA2663F00EF2641 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
