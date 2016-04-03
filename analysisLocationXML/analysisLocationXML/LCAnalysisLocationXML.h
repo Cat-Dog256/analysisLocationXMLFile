@@ -18,6 +18,8 @@
     </images>
  **/
 - (void)startAnalyXMLWithFilePath:(NSString *)filePath andElementName:(NSString *)elementName andElements:(NSArray *)elementsArray andResult:(void(^)(NSArray *dictArray))resultBlcok;
+
+- (void)startAnalyXMLTypeTwoWithFilePath:(NSString *)filePath  resultEarthAdress:(void(^)(NSArray *dictArray))resultBlcok;
 /** 格式二 返回dict格式为 {
                             id = "Asia/Bangkok";
                             item = Bangkok;

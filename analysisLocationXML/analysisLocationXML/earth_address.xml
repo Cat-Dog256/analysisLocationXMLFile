@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<earthadress>
 <country id="1" name="中国" latitude="null" longitude="null">
 <province id="8057" name="澳门" latitude="null" longitude="null"><city id="8649" name="路环" latitude="null" longitude="null">
 </city>
@@ -8326,3 +8327,4 @@
 </province>
 
 </country>
+</earthadress>

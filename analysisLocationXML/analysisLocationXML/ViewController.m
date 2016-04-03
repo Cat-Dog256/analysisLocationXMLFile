@@ -31,9 +31,15 @@
 //        NSLog(@"XML%@",dictArray);
 //    }];
     
-    NSString *paht4 = [[NSBundle mainBundle]pathForResource:@"earth_address" ofType:@"xml"];
-    [analysisXML startAnalyXMLTypeThreeWithFilePath:paht4 andElementName:@"city" andResult:^(NSArray *dictArray) {
-        NSLog(@"XML%@",dictArray);
+//    NSString *paht4 = [[NSBundle mainBundle]pathForResource:@"earth_address" ofType:@"xml"];
+//    [analysisXML startAnalyXMLTypeThreeWithFilePath:paht4 andElementName:@"city" andResult:^(NSArray *dictArray) {
+//        NSLog(@"XML%@",dictArray);
+//    }];
+    
+    NSString *paht5 = [[NSBundle mainBundle]pathForResource:@"earth_address" ofType:@"xml"];
+#pragma mark**建议用转成plist文件代替原来的xml文件**
+    [analysisXML startAnalyXMLTypeTwoWithFilePath:paht5 resultEarthAdress:^(NSArray *dictArray) {
+        NSLog(@"%@",dictArray);
     }];
 }
 - (void)didReceiveMemoryWarning {
